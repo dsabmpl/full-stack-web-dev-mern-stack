@@ -1,0 +1,128 @@
+
+var a = 10;
+typeof a;
+a=10.20;
+typeof a;
+a=543543543535;
+typeof a;
+console.log("Hello JS ");
+
+
+var a = 10;
+
+let b = 20;
+
+console.log("D is ", d);
+var d= 1000;
+console.log("*** D is ", d);
+
+//console.log("E is ", e);
+// TDZ
+let e= 1000;
+console.log("*** E is ", e);
+
+function show(){
+    // var e;  e= undefined
+    console.log('E is ', e);
+    if(10>2){
+        var e = 100; // e = 100;
+        console.log("Inside if ", e);
+    }
+    console.log("After if ", e);
+    var e= 2000; // e= 2000;
+}
+show();
+
+function show2(){
+    // var e;  e= undefined
+    //console.log('E is ', e);
+    if(10>2){
+       // console.log('TDZ ', e);
+        let e = 100; // e = 100;
+        console.log("Inside if ", e);
+    }
+    // TDZ
+    let e= 2000; // e= 2000;
+    console.log("After if ", e);
+    
+}
+show();
+function show2(){
+    // var e;  e= undefined
+    //console.log('E is ', e);
+    let e = 888;
+    if(10>2){
+       // console.log('TDZ ', e);
+        let e = 100; // e = 100;
+        console.log("Inside if ", e);
+    }
+    // TDZ
+    let e= 2000; // e= 2000;
+    console.log("After if ", e);
+    
+}
+show2();
+const  MIN = 1000;
+MIN = 888;
+const arr = [10,20,30];
+arr=[999,1000];
+arr[0] = 7777;
+arr.push(8888);
+function show(a=b, b=2){
+    console.log(a, b);
+}
+show();
+function show(b=2 ,a=b){
+    console.log(a, b);
+}
+show();
+let x= 10;
+{
+    console.log('X is ', x);
+    let y= 20;
+}
+var a= 10;
+a = 100.2;
+typeof a;
+a=10/0;
+typeof a;
+a=10 - "Amit"
+typeof NaN;
+var g;
+typeof g;
+var r = true;
+typeof r;
+r + 1000;
+true + true;
+var a= "Amit";
+typeof a;
+a.toUpperCase();
+typeof a;
+var e = new String("Amit");
+typeof e;
+e.toUpperCase();
+a = 'Amit';
+typeof a;
+a = "Let's do it";
+typeof a;
+a = `gjlkfjg
+gdfhgkjdf
+hgdfkjg`;
+console.log(a);
+var name = "Amit";
+"Dear "+name;
+`Dear ${name}`
+var amount= 1000;
+var msg = `Dear ${name}
+Your Rs ${amount} is Due on this Date 
+`;
+msg;
+name.toLowerCase();
+name = "     Amit     ";
+name.trim();
+var f = "amit";
+var f2 = "amit";
+f == f2;
+var r = new String("Amit");
+var r2 = new String("Amit");
+r == r2;
