@@ -1,0 +1,32 @@
+var a;
+undefined
+a;
+undefined
+typeof a;
+'undefined'
+var b = null;
+undefined
+typeof b;
+'object'
+var arr = [10,20,30,40];
+undefined
+typeof arr;
+'object'
+undefined == null;
+true
+typeof undefined;
+'undefined'
+typeof null;
+'object'
+undefined === null;
+false
+10 == "10"
+true
+typeof null;
+'object'
+100 + null;
+100
+100 + undefined;
+NaN
+typeof NaN;
+'number'

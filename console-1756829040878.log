@@ -1,0 +1,56 @@
+[] + []
+''
+[].toString();
+''
+'' + ''
+''
+var arr = [];
+undefined
+typeof arr;
+'object'
+arr instanceof Array;
+true
+arr instanceof Object;
+true
+Object.prototype.toString;
+ƒ toString() { [native code] }
+[10,20] + [90,100]
+'10,2090,100'
+[].toString() + {}.toString()
+'[object Object]'
+var obj = {}
+undefined
+typeof objl
+'undefined'
+typeof obj;
+'object'
+obj instanceof Object;
+true
+obj;
+{}
+obj.toString();
+'[object Object]'
+[] + {}
+'[object Object]'
+{};
+{}
+{} + []; 
+0
+{} + {}
+NaN
+[] + {}
+'[object Object]'
+({}) + ({})
+'[object Object][object Object]'
+"Amit" - 100
+NaN
+10 + 20
+30
+var a = "Amit";
+undefined
+typeof a;
+'string'
+a.toUpperCase();
+'AMIT'
+typeof a;
+'string'

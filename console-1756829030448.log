@@ -1,0 +1,28 @@
+var a= 10;
+undefined
+var r = Symbol();
+undefined
+r;
+Symbol()
+Symbol() == Symbol();
+false
+var key = Symbol();
+undefined
+var obj [key] = 1000;
+VM293:1 Uncaught SyntaxError: Unexpected token '['
+var obj = {};
+undefined
+obj[key] = 1000;
+1000
+obj[key];
+1000
+var key2 = Symbol();
+undefined
+obj[key2];
+undefined
+obj[key2] = 999;
+999
+obj[key];
+1000
+obj[key2];
+999

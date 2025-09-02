@@ -1,0 +1,73 @@
+var arr = [10,20,30,40];
+undefined
+var arr2 = arr;
+undefined
+arr == arr2;
+true
+arr === arr2;
+true
+arr2[0] = 888;
+888
+arr;
+(4) [888, 20, 30, 40]
+arr2;
+(4) [888, 20, 30, 40]
+var g = 100;
+undefined
+var g2 = g;
+undefined
+g2 + 88;
+188
+g2;
+100
+g2 = g2 + 88;
+188
+g2;
+188
+g;
+100
+typeof arr;
+'object'
+var obj = {}; // Object Literal
+undefined
+var r = [10,20,30]; // Array Literal
+undefined
+r instanceof Array;
+true
+typeof Array;
+'function'
+obj instanceof Array;
+false
+obj instanceof Object;
+true
+typeof Object;
+'function'
+r;
+(3) [10, 20, 30]
+r instanceof Array;
+true
+r instanceof Object;
+true
+var emp = {id : 1001 , name:'Ram'};
+undefined
+typeof emp;
+'object'
+emp.id;
+1001
+emp.name;
+'Ram'
+function show(){
+    console.log("I am the Show ");
+}
+undefined
+var g = show;
+undefined
+g;
+ƒ show(){
+    console.log("I am the Show ");
+}
+typeof g;
+'function'
+g();
+VM1065:2 I am the Show 
+undefined

@@ -1,0 +1,8 @@
+NaN == NaN
+false
+NaN === NaN
+false
+Infinity == Infinity;
+true
+Infinity === Infinity;
+true
