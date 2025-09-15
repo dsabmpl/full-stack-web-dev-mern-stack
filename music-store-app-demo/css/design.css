@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: gray;
+    color: white;
+}
+header{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #1DB954;
+}
+header h1{
+    margin: 0 0 10px;
+}
+header input[type='text']{
+    width: 200px;
+    padding: 8px 12px ;
+    border: 1px solid #4c4040;
+    border-radius: 24px;
+    background-color: lightslategrey;
+    color: white;
+
+
+}
+header button{
+    margin-left: 8px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: aqua;
+    color: blue;
+}
+main{
+    padding: 20px;
+
+}
+
+.songs{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+.cards{
+    background-color: cadetblue;
+    border: 1px solid darkgreen;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow:  0 2px 6px rgba(0,0,0,0.5);
+    transition: box-shadow .2s ease;
+}
+.cards:hover{
+    box-shadow: 0 4px 12px rgba(62, 207, 171, 0.5);
+}
+.title{
+    font-weight: bold;
+    margin: 10px 0 4px ;
+    color: yellow;
+}
+.artist{
+    color: lightcoral;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+audio{
+    width: 100%;
+    background-color: #4c4040;
+}
+.art{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 4px;
+}
